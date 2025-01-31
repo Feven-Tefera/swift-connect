@@ -1,0 +1,12 @@
+
+<div class="container">
+    <table class="table table-striped">
+      {% for request in requests %}
+        <tr>
+          <td>{{ request.company_name }}</td>
+          <td>{{ request.status }}</td>
+          <td><a href="/request/{{ request.id }}" class="btn btn-primary">Review</a></td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
